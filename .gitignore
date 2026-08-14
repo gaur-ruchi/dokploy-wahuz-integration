@@ -1,0 +1,10 @@
+# Wazuh generated TLS certificates
+single-node/config/wazuh_indexer_ssl_certs/
+
+# Environment / secrets
+.env
+*.env
+
+# OS/editor
+.DS_Store
+.vscode/
