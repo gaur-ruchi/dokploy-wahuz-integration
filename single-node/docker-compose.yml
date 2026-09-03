@@ -43,6 +43,7 @@ services:
       - ../../files/wazuh.manager-key.pem:/etc/ssl/filebeat.key
       - ../../files/wazuh_manager.conf:/wazuh-config-mount/etc/ossec.conf
       - ../../files/wazuh-gcp-reader.json:/var/ossec/wodles/gcloud/credentials.json:ro
+      - /var/log/cloudflare:/var/log/cloudflare:ro
 
   wazuh.indexer:
     image: wazuh/wazuh-indexer:4.14.7
